@@ -1,4 +1,4 @@
-# PolicyPulse: Civic Intelligence MAS
+# PolicyPulse: Adaptive Policy Memory and Impact Drift Detection for Public Governance
 
 PolicyPulse is a **Multi-Agent System (MAS)** designed to bridge the gap between **government policy intent** and **real-world impact**. By utilizing a **vector-database-driven memory** and **LLM-powered reasoning**, the system analyzes whether policies are *drifting* from their original goals.
 
