@@ -1,33 +1,33 @@
-# 🧬 PolicyPulse: Civic Intelligence MAS
+# PolicyPulse: Civic Intelligence MAS
 
 PolicyPulse is a **Multi-Agent System (MAS)** designed to bridge the gap between **government policy intent** and **real-world impact**. By utilizing a **vector-database-driven memory** and **LLM-powered reasoning**, the system analyzes whether policies are *drifting* from their original goals.
 
 ---
 
-## 🤖 Agentic Architecture
+## Agentic Architecture:
 
 The system operates through three specialized agents:
 
-### 📚 Archivist Agent (Retrieval)
+### Archivist Agent (Retrieval)
 - Uses **Qdrant** and **all-MiniLM-L6-v2**
 - Performs semantic searches across **1,100+ policy records**
 - Retrieves the most relevant legislation for a user's query
 - Regional Fallback capability - if a state policy is missing, it intelligently pulls national or cross-regional data.
 
-### 🔍 Auditor Agent (Analysis)
+### Auditor Agent (Analysis)
 - Cross-references policy text with **live field impact data** from **data.gov.in**
 - Computes a **Drift Score** to evaluate whether a policy is meeting its intended outcomes
 - Classifies drift into None (In Sync), Low, or High categories
 
 
-### 🧠 Strategist Agent (Reasoning)
+### Strategist Agent (Reasoning)
 - Powered by **Llama-3.3-70B**
 - Synthesizes findings into **actionable governance insights**
 - Extracts **cross-jurisdictional lessons** for policymakers
 
 ---
 
-## 🧩 Qdrant Usage
+## Qdrant Usage:
 
 PolicyPulse uses **Qdrant as the primary vector search engine** for long-term policy memory.
 
@@ -40,7 +40,7 @@ PolicyPulse uses **Qdrant as the primary vector search engine** for long-term po
 
 ---
 
-## 📂 Project Structure
+## Project Structure:
 
 ```plaintext
 backend/
@@ -56,7 +56,7 @@ backend/
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Backend Setup
 
@@ -109,7 +109,7 @@ Access the UI in your browser:
 http://localhost:5173 or http://localhost:5174
 ```
 
-## 🔐 API Notes
+## API Notes
 
 - LLM-based reasoning uses Groq (Llama-3.3-70B) when an API key is provided
 - If the API key is unavailable, the system falls back to deterministic logic
@@ -122,7 +122,7 @@ http://localhost:5173 or http://localhost:5174
 - If no API key is provided, the pipeline skips live ingestion and completes successfully
 
 ---
-## 🔁 Reproducibility
+## Reproducibility
 
 This project is fully reproducible and runs end-to-end locally.
 
@@ -148,7 +148,7 @@ Anyone can clone this repository, follow the setup steps, and reproduce the resu
 
 ---
 
-## 📌 Metadata
+## Metadata
 
 **PolicyPulse | MAS-PP-2026**  
 Built for **Convolve 4.0**
