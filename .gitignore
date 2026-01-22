@@ -1,0 +1,48 @@
+# =========================
+# Python (Backend)
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments (ABSOLUTELY NEVER COMMIT)
+masenv/
+venv/
+env/
+
+# Environment variables
+.env
+backend/.env
+
+# Python tooling
+.pytest_cache/
+.python-version
+
+# =========================
+# Qdrant / Local data
+# =========================
+backend/qdrant_data/
+backend/feedback_logs.json
+*.log
+
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+frontend/node_modules/
+dist/
+dist-ssr/
+.vite/
+
+# =========================
+# OS / Editor junk
+# =========================
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

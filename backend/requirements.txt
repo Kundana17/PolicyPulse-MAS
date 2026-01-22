@@ -1,0 +1,21 @@
+# Web Framework
+fastapi
+uvicorn
+python-multipart
+httpx
+
+# Vector Search & Processing
+qdrant-client
+sentence-transformers
+numpy
+pandas
+
+# LLM Agent APIs
+groq
+google-genai
+
+# System Utilities
+python-dotenv
+portalocker
+pydantic>=2.0
+requests
